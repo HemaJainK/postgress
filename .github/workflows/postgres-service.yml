@@ -36,6 +36,4 @@ jobs:
           done
           echo "PostgreSQL is ready!"
 
-      - name: Confirm PostgreSQL Service
-        run: |
-          PGPASSWORD=test_password psql -h localhost -U test_user -d test_db -c "SELECT 'PostgreSQL is Running' AS status;"
+     
